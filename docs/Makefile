@@ -123,6 +123,7 @@ md:
 	$(SPHINXBUILD) -M markdown $(ALLSPHINXOPTS) $(BUILDDIR)/markdown
 	@echo
 	@echo "Build finished. The markdown pages are in $(BUILDDIR)/markdown."
+	cp _build/markdown/index.md README.md
 
 texinfo:
 	$(SPHINXBUILD) -b texinfo $(ALLSPHINXOPTS) $(BUILDDIR)/texinfo
