@@ -1,18 +1,16 @@
-.. prod_ready_ml documentation master file, created by
-   sphinx-quickstart.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
+.. prod_ready_ml documentation
 
 prod_ready_ml documentation!
 ==============================================
 
 Contents:
 
+.. automodule:: src.models.train_model
+   :members:
+
 .. toctree::
    :maxdepth: 2
 
-   getting-started
-   commands
 
 
 
