@@ -5,14 +5,12 @@
     Creates the database tables from csv files to be used in training.
 '''
 import os
-import click
+import sys
 import pandas as pd
 import sqlalchemy as sa
 from dotenv import find_dotenv, load_dotenv
 
 
-@click.command()
-@click.argument('input_filepath', type=click.Path(exists=True))
 def load_data_to_db(input_filepath: str) -> None:
     """ Creates database table(s) from raw data.
 
@@ -41,4 +39,4 @@ def load_data_to_db(input_filepath: str) -> None:
 
 if __name__ == '__main__':
 
-    load_data_to_db()
+    load_data_to_db(input_filepath=sys.argv[1])

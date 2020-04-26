@@ -9,6 +9,7 @@ Contents:
    :maxdepth: 2
 
    train_model
+   make_dataset
 
 
 

@@ -123,7 +123,7 @@ md:
 	$(SPHINXBUILD) -M markdown $(ALLSPHINXOPTS) $(BUILDDIR)/markdown
 	@echo
 	@echo "Build finished. The markdown pages are in $(BUILDDIR)/markdown."
-	@echo "# prod_ready_ml" >> README.md
+	@echo "# prod_ready_ml" > README.md
 	@for f in $(BUILDDIR)/markdown/*; do case $$f in "_build/markdown/index.md") ;; *) cat $$f >> README.md; echo "" >> README.md ;; esac done
 	@echo "README.md updated."
 
