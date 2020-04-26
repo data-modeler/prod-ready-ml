@@ -3,8 +3,16 @@ prod_ready_ml
 
 An architecture for machine learning projects that uses databases for training and model storage.
 
-Project Organization
-------------
+## Objective
+The goal of the project is to develop a pattern of training directly from a database (which should often help with memory consumption as it will not need to hold all of the training and validation data in memory). Further, it captures and stores all of the training configuration for ease of recreation, say, for production.
+
+#### Project Process Diagram
+![Project Process Diagram](https://github.com/data-modeler/prod-ready-ml/blob/master/reports/figures/project_design.jpg)
+
+## The model
+Although this project is more about developing an architecture and pattern for production-ready machine learning, the data and model are based upon the [Twitter hate speech training dataset found at Kaggle.com](https://www.kaggle.com/arkhoshghalb/twitter-sentiment-analysis-hatred-speech).
+
+## Project Organization
 
     ├── LICENSE
     ├── Makefile           <- Makefile with commands like `make data` or `make train`
