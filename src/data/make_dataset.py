@@ -34,7 +34,7 @@ def load_data_to_db(input_filepath: str) -> None:
     for f in fs:
         dat = pd.read_csv(os.path.join(input_filepath, f))
         tab_nm = f.replace('.csv', '')
-        dat.to_sql(name=tab_nm, con=eng, if_exists='replace')
+        dat.to_sql(name=tab_nm, con=eng, if_exists='replace', index=False)
 
 
 if __name__ == '__main__':
